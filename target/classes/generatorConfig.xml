@@ -28,15 +28,18 @@
                         connectionURL="jdbc:mysql://localhost:3306/xfrd?useUnicode=true&amp;characterEncoding=UTF-8"
                         userId="root" password="root" />
 
+        <!--配置生成实体类的目录-->
         <javaModelGenerator targetPackage="org.apache.maven.plugins.entity"
                             targetProject="src/main/java" >
             <!-- 在targetPackage的基础上，根据数据库的schema再生成一层package，最终生成的类放在这个package下，默认为false -->
             <!--<property name="enableSubPackages" value="true"/>-->
         </javaModelGenerator>
 
+        <!--配置生成mapper文件的目录-->
         <sqlMapGenerator targetPackage="mapper"
                          targetProject="src/main/resources" />
 
+        <!--配置生成dao层的目录-->
         <javaClientGenerator targetPackage="org.apache.maven.plugins.dao"
             targetProject="src/main/java" type="XMLMAPPER" />
 
