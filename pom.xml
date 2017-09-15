@@ -73,6 +73,13 @@
         <configuration>
           <verbose>true</verbose>
           <overwrite>true</overwrite>
+          <sqlScript>classpath:sql\script.sql</sqlScript>
+          <!--<sqlScript>D:\github-code\mymavenplugintest\src\main\resources\sql\script.sql</sqlScript>-->
+          <jdbcDriver>com.mysql.jdbc.Driver</jdbcDriver>
+          <jdbcURL>jdbc:mysql://localhost:3306/baike_pic?useUnicode=true&amp;characterEncoding=UTF-8</jdbcURL>
+          <jdbcUserId>root</jdbcUserId>
+          <jdbcPassword>root</jdbcPassword>
+          <includeAllDependencies>true</includeAllDependencies>
         </configuration>
       </plugin>
     </plugins>

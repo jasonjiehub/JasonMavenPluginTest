@@ -323,6 +323,2628 @@
     select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
     from tb_classify
   </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
+  <resultMap id="BaseResultMap" type="org.apache.maven.plugins.entity.TbClassify">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="valid_number" jdbcType="TINYINT" property="validNumber" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="check_url" jdbcType="VARCHAR" property="checkUrl" />
+    <result column="modal_id" jdbcType="VARCHAR" property="modalId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    insert into tb_classify (id, name, pid, 
+      valid_number, url, comment, 
+      icon, check_url, modal_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
+      #{validNumber,jdbcType=TINYINT}, #{url,jdbcType=VARCHAR}, #{comment,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{checkUrl,jdbcType=VARCHAR}, #{modalId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="org.apache.maven.plugins.entity.TbClassify">
+    update tb_classify
+    set name = #{name,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER},
+      valid_number = #{validNumber,jdbcType=TINYINT},
+      url = #{url,jdbcType=VARCHAR},
+      comment = #{comment,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      check_url = #{checkUrl,jdbcType=VARCHAR},
+      modal_id = #{modalId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pid, valid_number, url, comment, icon, check_url, modal_id
+    from tb_classify
+  </select>
   <resultMap id="BaseResultMap" type="org.apache.maven.plugins.TbClassify">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="name" jdbcType="VARCHAR" property="name" />
